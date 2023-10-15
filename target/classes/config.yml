@@ -1,0 +1,7 @@
+name: SoulTradePlugin
+trade:
+  closeButtonSlot: 0
+  initiatorLockButtonSlot: 1
+  receiverLockButtonSlot: 7
+  confirmButtonSlot: 8
+  reach: 5

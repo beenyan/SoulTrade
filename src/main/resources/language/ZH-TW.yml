@@ -1,0 +1,59 @@
+# https://minecraft.fandom.com/zh/wiki/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81?variant=zh-tw
+
+# Commands
+cmd:
+  st:
+    overTradeReach: "§e§l{0} §c在你無法觸及之地" # 0 => receiver name
+    invite:
+      help: "§6/st invite {Player} §f向其他玩家發送貿易請求"
+      sendToSelf: "§c你無權對自己提出貿易請求"
+      tradeTargetChange: "§e§l{0} §2跑去跟別人貿易了 §bQAQ" # 0 => initiator name
+      alreadySendRequest: "§9貿易請求已送出，請耐心等候"
+      receiveRequest: "§e§l{0} §a對你提出貿易請求" # 0 => initiator name
+      receiveStartTrade: "§e§l{0} §a正與 §e§l{1} §a進行貿易"  # 0 => receiver name, 1 => send request name
+      sendRequestSuccess: "§a成功送出貿易請求"
+      button:
+        accept:
+          clickText: " §a§l[接受]"
+          hoverText: "§a§l接受貿易請求"
+        reject:
+          clickText: " §c§l[否決]"
+          hoverText: "§c§l否決貿易請求"
+    accept:
+      help: "§6/st accept {Player} §f接受其他玩家的貿易請求"
+      notFoundRequest: "§c接受貿易請求失敗 - 查無此請求"
+    reject:
+      help: "§6/st reject {Player} §f否決其他玩家的貿易請求"
+      requestBeReject: "§b你對 §e§l{0} §b提出貿易請求被否決" # 0 => receiver name
+      rejectRequestSuccess: "§c否決貿易請求成功"
+      notFoundRequest: "§c否決貿易請求失敗 - 查無此請求"
+    history:
+      help: "§6/st history §f顯示貿易紀錄"
+
+# Trade GUI
+tradeGUI:
+  title: "§3貿易介面"
+  receiverStartTrade: "§e§l{0} §s與別人貿易，請求已被取消" # 0 => receiver name
+  cancelTrade: "§e§l{0} §b取消了交易" # 0 => 主動
+  item:
+    close: "§c取消交易"
+    border: "§3佔位格"
+    unLock: "§b鎖定貿易"
+    lock: "§3解除鎖定"
+    confirm: "§p確認"
+
+# Shulker GUI
+ShulkerGUI:
+  title: "§l§9界伏盒預覽"
+  item:
+    border: "§3分隔線"
+
+# Utils
+util:
+  notFoundPlayer: "§c未找到玩家 §e§l{0}" # 0 => receiver name
+
+# Log (No Style)
+log:
+  onEnable: "靈魂貿易 Soul Trade 啟動"
+  startTrade: "{0} 與 {1} 開始貿易" # 0 => initiator name, 1 => receiver name
+  closeTrade: "{0} 取消與 {1} 的貿易" # 0 => 主動, 1 => 被動

@@ -1,0 +1,14 @@
+name: Soul_Trade
+version: '${project.version}'
+main: com.beenyan.soultrade.SoulTrade
+api-version: '1.20'
+prefix: soul_trade
+authors: [ BeenYan ]
+description: 靈魂交易
+commands:
+  soul_trade:
+    description: 靈魂交易指令
+    usage: /<command> [invite | accept | reject | history] {Player}
+    aliases:
+      - st
+      - soultrade
